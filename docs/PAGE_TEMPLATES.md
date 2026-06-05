@@ -2,13 +2,24 @@
 
 These are starter shapes for pages an agent may create under `wiki/`. Adapt them to the domain in `AGENTS.md` when needed.
 
+Every page begins with YAML frontmatter so humans and tools such as Obsidian Dataview can query it. The `status` values match the labels in `AGENTS.md`. Links between wiki pages use `[[wikilinks]]` so the Obsidian graph stays connected.
+
 ## Source Summary
 
 ```md
+---
+title: [Source title]
+type: source
+status: source-derived
+created: [YYYY-MM-DD]
+updated: [YYYY-MM-DD]
+tags: []
+source: [raw/path]
+related: []
+---
+
 # Source: [Title]
 
-Status: `source-derived`
-Source path: [raw/path]
 Source type: [article / transcript / screenshot / export / code / note]
 Date/version: [known or unclear]
 
@@ -25,14 +36,25 @@ Date/version: [known or unclear]
 ## Open Questions
 
 ## Related Pages
+
+- [[Related page name]]
 ```
 
 ## Concept Page
 
 ```md
-# [Concept]
+---
+title: [Concept]
+type: concept
+status: source-derived
+created: [YYYY-MM-DD]
+updated: [YYYY-MM-DD]
+tags: []
+source: []
+related: []
+---
 
-Status: `source-derived` / `inferred` / `proposed`
+# [Concept]
 
 ## Definition
 
@@ -40,19 +62,33 @@ Status: `source-derived` / `inferred` / `proposed`
 
 ## Related Concepts
 
+- [[Related concept]]
+
 ## Contradictions Or Uncertainty
 
 ## Source Traceability
 
 ## Related Pages
+
+- [[Related page name]]
 ```
 
 ## Entity Page
 
 ```md
+---
+title: [Entity name]
+type: entity
+status: source-derived
+created: [YYYY-MM-DD]
+updated: [YYYY-MM-DD]
+tags: []
+source: []
+related: []
+---
+
 # [Entity Name]
 
-Status: `source-derived` / `inferred` / `unclear`
 Entity type: [person / organization / system / object / place / data object]
 
 ## Description
@@ -66,15 +102,25 @@ Entity type: [person / organization / system / object / place / data object]
 ## Open Questions
 
 ## Related Pages
+
+- [[Related page name]]
 ```
 
 ## Decision Page
 
 ```md
-# Decision: [Short Title]
+---
+title: [Decision title]
+type: decision
+status: proposed
+created: [YYYY-MM-DD]
+updated: [YYYY-MM-DD]
+tags: []
+source: []
+related: []
+---
 
-Status: `proposed` / `implemented` / `verified` / `deprecated` / `superseded`
-Date: [YYYY-MM-DD]
+# Decision: [Short Title]
 
 ## Context
 
@@ -89,21 +135,35 @@ Date: [YYYY-MM-DD]
 ## Source Or Wiki Traceability
 
 ## Open Questions
+
+## Related Pages
+
+- [[Related page name]]
 ```
 
 ## Open Question
 
 ```md
-# Question: [Short Title]
+---
+title: [Question title]
+type: question
+status: unclear
+created: [YYYY-MM-DD]
+updated: [YYYY-MM-DD]
+tags: []
+source: []
+related: []
+---
 
-Status: `unclear`
-Raised: [YYYY-MM-DD]
+# Question: [Short Title]
 
 ## Question
 
 ## Why It Matters
 
 ## Relevant Sources Or Pages
+
+- [[Relevant page]]
 
 ## Candidate Answers
 
@@ -113,9 +173,18 @@ Raised: [YYYY-MM-DD]
 ## Synthesis Page
 
 ```md
-# [Synthesis Topic]
+---
+title: [Synthesis topic]
+type: synthesis
+status: inferred
+created: [YYYY-MM-DD]
+updated: [YYYY-MM-DD]
+tags: []
+source: []
+related: []
+---
 
-Status: `inferred` / `proposed` / `verified`
+# [Synthesis Topic]
 
 ## Thesis Or Summary
 
@@ -128,4 +197,8 @@ Status: `inferred` / `proposed` / `verified`
 ## Open Questions
 
 ## Source Traceability
+
+## Related Pages
+
+- [[Related page name]]
 ```
