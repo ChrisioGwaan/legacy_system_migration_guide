@@ -10,6 +10,8 @@ Start here if you are using the template for a new project.
 - [PAGE_TEMPLATES.md](PAGE_TEMPLATES.md) - reusable page shapes for generated wiki pages.
 - [SCHEMA_CUSTOMIZATION.md](SCHEMA_CUSTOMIZATION.md) - how to adapt `AGENTS.md` for a domain.
 - [PRIVACY_AND_SOURCE_HANDLING.md](PRIVACY_AND_SOURCE_HANDLING.md) - handling sensitive sources and Git hygiene.
+- [USING_WITH_AI_TOOLS.md](USING_WITH_AI_TOOLS.md) - make any AI tool load the `AGENTS.md` schema.
+- [BROWSING_THE_WIKI.md](BROWSING_THE_WIKI.md) - browse the wiki in Obsidian with graph view and Dataview.
 
 ## Starter Wiki Pages
 
