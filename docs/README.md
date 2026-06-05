@@ -28,3 +28,4 @@ Start here if you are using the template for a new project.
 ## Advanced Patterns
 
 - [advanced/AI_AGENT_COUNCIL.md](advanced/AI_AGENT_COUNCIL.md) - optional multi-agent coordination pattern for larger projects.
+- [advanced/RUNNING_WITH_RALPH.md](advanced/RUNNING_WITH_RALPH.md) - drive the wiki with an autonomous loop runner (Ralph Orchestrator).

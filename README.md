@@ -138,4 +138,4 @@ For the human-facing explanation of this template, see:
 Optional profiles and advanced material live under:
 
 - `docs/profiles/` - examples for migration or implementation-heavy projects
-- `docs/advanced/` - advanced coordination patterns such as multi-agent councils
+- `docs/advanced/` - advanced coordination patterns such as multi-agent councils and autonomous loop orchestration

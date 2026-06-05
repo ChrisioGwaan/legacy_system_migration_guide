@@ -42,3 +42,4 @@ Examples:
 - A database MCP for schema inspection.
 - A browser MCP for live web verification.
 - A specialist subagent for source analysis, security review, or QA.
+- An autonomous loop runner such as Ralph Orchestrator for unattended implement and QA cycles (see `docs/advanced/RUNNING_WITH_RALPH.md`).
