@@ -1,3 +1,11 @@
+---
+title: LLM Wiki Index
+type: index
+created: 2026-06-06
+updated: 2026-06-06
+tags: []
+---
+
 # LLM Wiki Index
 
 This file is generated and maintained by AI agents as the wiki grows.
@@ -8,8 +16,8 @@ Status: starter template, not yet ingested for a real project.
 
 ## Starter pages
 
-- [log.md](log.md) - append-only chronological record of wiki activity.
-- [capabilities.md](capabilities.md) - project-specific routing table for useful skills, plugins, MCP servers, subagents, and tools.
+- [[log]] - append-only chronological record of wiki activity.
+- [[capabilities]] - project-specific routing table for useful skills, plugins, MCP servers, subagents, and tools.
 
 ## Expected generated sections
 
