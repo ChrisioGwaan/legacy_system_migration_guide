@@ -6,6 +6,8 @@ The wiki is a persistent, compounding knowledge base. Raw sources stay under `ra
 
 The AI must build and maintain the wiki before making dependent design, implementation, or analysis claims.
 
+`AGENTS.md` is the canonical schema and takes precedence over any tool-specific loader file, such as `CLAUDE.md` in Claude Code. Those loader files only point here.
+
 ## Core concept
 
 `raw/` contains immutable source material and evidence.
@@ -146,9 +148,32 @@ Use these labels consistently:
 * `deprecated`
 * `superseded`
 
+## Page frontmatter
+
+Generated wiki pages should begin with YAML frontmatter so humans and tools such as Obsidian Dataview can query them:
+
+```yaml
+---
+title: <page title>
+type: source | concept | entity | decision | question | synthesis | maintenance | screen | data-object | workflow | integration | role | index | log | registry
+status: source-derived | inferred | unclear | proposed | implemented | verified | deprecated | superseded
+created: YYYY-MM-DD
+updated: YYYY-MM-DD
+tags: []
+source: []      # optional: raw/ evidence paths
+related: []     # optional: related wiki pages
+---
+```
+
+Use the `status` labels above. Keep `updated` current when a page changes. Index, log, and registry pages may omit `status`, `source`, and `related`.
+
+## Wiki-internal links
+
+Links between pages inside `wiki/` use Obsidian-style wikilinks such as `[[page-name]]`, so the wiki graph stays connected. Links in `docs/` and `README.md` use standard markdown links so they render on GitHub.
+
 ## Index and log rules
 
-`wiki/index.md` is content-oriented. It should list wiki pages by category, with a link and one-line summary for each page.
+`wiki/index.md` is content-oriented. It should list wiki pages by category, with a `[[wikilink]]` and one-line summary for each page.
 
 `wiki/log.md` is chronological and append-only. Entries should use this shape where possible:
 
