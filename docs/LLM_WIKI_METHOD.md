@@ -4,6 +4,8 @@ This document explains the concept behind this template.
 
 It is written for humans. AI agents should follow `AGENTS.md` for operating rules.
 
+The LLM Wiki concept is inspired by [Andrej Karpathy's "LLM Wiki" note](https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f). This document restates and adapts that idea for this template.
+
 ## The idea
 
 Most document-based LLM workflows look like retrieval-augmented generation. You upload files, the system retrieves chunks at question time, and the LLM assembles an answer. That is useful, but the knowledge does not compound very much. Each subtle question can force the model to rediscover and reconnect the same fragments again.

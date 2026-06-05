@@ -8,7 +8,9 @@ The wiki is not a one-time summary. It is a compounding artifact that gets riche
 
 ## Attribution and license
 
-Concept, framework, and template direction by **Chrisio Gwaan GUAN**.
+This template is a concrete implementation of the "LLM Wiki" idea, inspired by [Andrej Karpathy's "LLM Wiki" note](https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f).
+
+Template design, schema (`AGENTS.md`), enterprise-migration framework, AI Agent Council pattern, and capability routing by **Chrisio Gwaan GUAN**.
 
 Copyright (c) 2026 Chrisio Gwaan GUAN.
 
