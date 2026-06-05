@@ -43,6 +43,7 @@ wiki/    AI-generated knowledge base, index, and log
 target/  optional implementation, generated outputs, or external repo notes
 docs/    human-facing explanations and guides
 AGENTS.md schema and operating instructions for AI wiki maintenance
+CLAUDE.md thin loader so Claude Code reads AGENTS.md (see docs/USING_WITH_AI_TOOLS.md)
 ```
 
 The starter wiki includes `wiki/capabilities.md`, a lightweight registry for routing agents to only the skills, plugins, MCP servers, subagents, or external tools that are useful for the current project.
@@ -74,6 +75,8 @@ Do not mix unrelated projects in one wiki. Each project should have its own `raw
 8. Ask questions against the wiki; file durable answers back into `wiki/` when useful.
 9. Periodically ask the agent to lint the wiki for contradictions, stale claims, missing links, and orphan pages.
 10. If the project has implementation work, build it under `target/` or document the linked target repository there.
+
+Tip: browse `wiki/` in Obsidian to follow links and see the graph. See `docs/BROWSING_THE_WIKI.md`.
 
 ## Source materials
 
@@ -127,6 +130,8 @@ For the human-facing explanation of this template, see:
 - `docs/PAGE_TEMPLATES.md` - provides starter page shapes the agent can use in `wiki/`
 - `docs/SCHEMA_CUSTOMIZATION.md` - explains how to adapt `AGENTS.md` for a domain
 - `docs/PRIVACY_AND_SOURCE_HANDLING.md` - covers source handling, sensitive data, and Git hygiene
+- `docs/USING_WITH_AI_TOOLS.md` - how to make any AI tool load the `AGENTS.md` schema
+- `docs/BROWSING_THE_WIKI.md` - browsing the wiki in Obsidian with graph view and Dataview
 
 Optional profiles and advanced material live under:
 
